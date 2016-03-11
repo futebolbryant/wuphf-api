@@ -7,7 +7,8 @@ using Microsoft.AspNet.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-
+using Models;
+using Services;
 namespace wuphf_api
 {
     public class Startup
@@ -28,6 +29,8 @@ namespace wuphf_api
         {
             // Add framework services.
             services.AddMvc();
+            
+            services.AddTransient<IAsyncRepository<Message>, AsyncMessageRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

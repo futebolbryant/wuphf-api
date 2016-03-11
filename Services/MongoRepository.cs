@@ -14,7 +14,7 @@ namespace Services
         private IMongoDatabase _database;
         public MongoRepository()
         {
-            _client = new MongoClient("mongodb://localhost:27017");
+            _client = new MongoClient("mongodb://40.84.192.70:27017");
             _database = _client.GetDatabase("wuphf");
         }      
         

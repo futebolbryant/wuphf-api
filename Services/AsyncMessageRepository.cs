@@ -7,6 +7,6 @@ namespace Services
         public override string GetCollectionName()
         {
             return "messages";
-        }
+        }              
     }
 }

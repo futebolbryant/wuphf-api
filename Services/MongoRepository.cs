@@ -18,6 +18,7 @@ namespace Services
             _client = new MongoClient("mongodb://localhost:27017");
             _database = _client.GetDatabase("wuphf");
         }      
+        
         public abstract string GetCollectionName();
 
         public IMongoCollection<T> GetCollection()

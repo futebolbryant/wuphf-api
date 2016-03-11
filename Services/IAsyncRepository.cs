@@ -6,7 +6,6 @@ namespace Services
     {
         Task<List<T>> FindAll();
         Task Save(T obj);
-        Task Delete(string id);
-        
+        Task Delete(string id);        
     }
 }
